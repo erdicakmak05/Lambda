@@ -3,6 +3,7 @@ package proje;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -35,14 +36,12 @@ public class Main {
 		System.out.println("***");
 		soyIsimeGoreSirala("Deniz");
 		
-
-
-		
-	
+		 //reduce metoduyla ortalama hesaplayin
+		System.out.println("***");
 		
 	}
-	
-    private static void soyIsimeGoreSirala(String soyad) {
+
+	private static void soyIsimeGoreSirala(String soyad) {
 		ogrListesi.stream().filter(t->t.getSoyad().equalsIgnoreCase(soyad)).forEach(t->System.out.println(t.toString()));
 		
 	}
